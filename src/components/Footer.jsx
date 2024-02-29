@@ -94,7 +94,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="w-40">
-                    <select name="country" id="country" className='bg-[#212731] text-white'>
+                    <select name="country" id="country" value={'d'} defaultValue={"US"} className='bg-[#212731] text-white'>
+                        <option value="none">Select Country</option>
                         <option className='text-white' value="US" selected>United States</option>
                         {
                             countries.map(country => (

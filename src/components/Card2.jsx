@@ -39,8 +39,8 @@ export default function Card2() {
             {
 
                 products.map((product) => (
-                    <div className='bg-white flex flex-col justify-center items-center space-y-1'>
-                        <img className='w-40 h-40' src={product.image} alt="img" />
+                    <div className='bg-white flex flex-col justify-center items-center space-y-1 p-4 rounded-[12px] ' key={product.id}>
+                        <img className='w-36 h-24 my-10 ' src={product.image} alt="img" />
                         <div className="space-y-1 my-2 ">
                             <div className="text-[14px] text-[#074786] space-x-2">
                                 <span className='bg-[#F2F4F7] rounded-[8px] p-1'>{parseInt(((product.mrp - product.price) / product.mrp) * 100) + "% off"}</span>

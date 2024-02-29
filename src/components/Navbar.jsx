@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchIcon from "../images/searchIcon.png"
+// import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const navOptions = [
@@ -19,7 +20,9 @@ export default function Navbar() {
                     <ul className='flex text-[#D1D6DA] space-x-20 '>
                         {
                             navOptions.map((option, index) => (
-                                <li className='' key={index}>{option}</li>
+                                // <Link to={option} key={index} className="cursor-pointer ">
+                                    <li className='cursor-pointer' key={index}>{option}</li>
+                                // </Link>
                             ))
                         }
                     </ul>
