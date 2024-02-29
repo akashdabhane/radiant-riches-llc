@@ -64,7 +64,7 @@ export default function Footer() {
 
     return (
         <footer className='bg-[#212731] w-full '>
-            <div className="flex justify-between text-left h-96 mx-80 py-20 ">
+            <div className="grid grid-cols-2 gap-8 md:gap-4 md:grid-cols-3 justify-between text-left h-96 mx-2 sm:mx-20 md:40 lg:60 xl:mx-80 py-20 ">
                 <div className="">
                     <h4 className='uppercase text-white mb-6 text-[16px] '>categories</h4>
                     <div className="space-y-4">
@@ -93,13 +93,12 @@ export default function Footer() {
                         }
                     </div>
                 </div>
-                <div className="w-40">
-                    <select name="country" id="country" value={'d'} defaultValue={"US"} className='bg-[#212731] text-white'>
-                        <option value="none">Select Country</option>
+                <div className="w-20 md:w-40">
+                    <select name="country" id="country"  className='bg-[#212731] text-white'>
                         <option className='text-white' value="US" selected>United States</option>
                         {
                             countries.map(country => (
-                                <option className='text-white' key={country} value={country} />
+                                <option className='text-white' key={country} value={country}>{country}</option>
                             ))
                         }
                     </select>

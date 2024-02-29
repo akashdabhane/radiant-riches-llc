@@ -21,8 +21,8 @@ export default function Home() {
     return (
         <div>
             <Navbar />
-            <div className="px-56 bg-[#FBFCFD] py-6 space-y-3">
-                <h1 className='text-3xl'>Best Website builders in the US</h1>
+            <div className="p-2 sm:px-24 md:px-40 xl:px-60 bg-[#FBFCFD] py-6 space-y-3">
+                <h1 className='text-3xl mx-4 md:mx-0'>Best Website builders in the US</h1>
 
                 <div className="border-y py-2 flex justify-between items-center text-[#4B5665] text-[14px]  ">
                     <div className="flex items-center space-x-4">
@@ -41,25 +41,25 @@ export default function Home() {
                     </p>
                 </div>
 
-                <ul className="flex space-x-8 ">
+                {/* <ul className="flex space-x-8 ">
                     {
                         menu.map((item, index) => (
                             <li key={index} className="p-2 rounded-[12px] bg-[#FFFFFF] text-[#4B5665] ">{item}</li>
                         ))
                     }
-                </ul>
+                </ul> */}
 
                 <Card />
 
-                <h2 className='my-8 text-[32px] text-[#2C384A] '>Related deals you might like for</h2>
+                <h2 className='my-8 text-[24px] md:text-[32px] text-[#2C384A] mx-4 md:mx-0'>Related deals you might like for</h2>
                 <Card2 />
-                <div className="flex justify-between my-14">
+                <div className="flex flex-col mx-4 md:mx-0 space-y-2 md:flex-row justify-between py-8">
                     <div className="">
-                        <h2 className='text-3xl w-[400px] text-[#5C6874]'>Sign up and get exclusive special deals</h2>
+                        <h2 className='text-[24px] md:text-3xl  text-[#5C6874]'>Sign up and get exclusive special deals</h2>
                     </div>
                     <div className="">
                         <div className="flex ">
-                            <input className="text rounded-l-[12px] p-2 border-[]" type="text" />
+                            <input className="text rounded-l-[12px] p-2 border border-[#1B88F4] outline-[#1B88F4] w-60 md:w-80" type="text" />
                             <button className='bg-[#1B88F4] text-white rounded-r-[12px] p-2 '>Sign Up</button>
                         </div>
                     </div>
