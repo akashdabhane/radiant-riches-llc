@@ -1,38 +1,8 @@
 import React from 'react'
-import Image from '../images/productImg.png'
 
-export default function Card2() {
+export default function Card2({products}) {
 
-    const products = [
-        {
-            id: 1,
-            name: 'Webbuilder 1',
-            description: "Computer  Modern clasic with wix support",
-            price: 100,
-            mrp: 3838,
-            limited: true,
-            image: Image,
-        },
-        {
-            id: 2,
-            name: 'Webbuilder 1',
-            description: "Computer  Modern clasic with wix support",
-            price: 100,
-            mrp: 3838,
-            limited: true,
-            image: Image,
-        },
-        {
-            id: 3,
-            name: 'Webbuilder 1',
-            description: "Computer  Modern clasic with wix support",
-            price: 100,
-            mrp: 3838,
-            limited: true,
-            image: Image,
-        },
-
-    ]
+    
 
     return (
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 space-y-2 md:space-y-0 justify-between'>

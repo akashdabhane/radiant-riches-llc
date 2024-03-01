@@ -1,43 +1,9 @@
 import React from 'react'
-import productImg from '../images/productImg.png'
 import { FaChevronDown } from "react-icons/fa";
 import Rating from './Rating';
 
 
-export default function Card() {
-    const products = [
-        {
-            id: 1,
-            name: 'Builder 1',
-            price: 100,
-            image: productImg,
-            rating: 9.4,
-            heading: "WixPro 72-Inch Responsive Website Builder",
-            headingPara: "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
-            hightlight: "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
-        },
-        {
-            id: 2,
-            name: 'Builder 1',
-            price: 100,
-            image: productImg,
-            rating: 9.4,
-            heading: "WixPro 72-Inch Responsive Website Builder",
-            headingPara: "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
-            hightlight: "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
-        },
-        {
-            id: 3,
-            name: 'Builder 1',
-            price: 100,
-            image: productImg,
-            rating: 9.4,
-            heading: "WixPro 72-Inch Responsive Website Builder",
-            headingPara: "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
-            hightlight: "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
-        },
-    ]
-
+export default function Card({products}) {
 
 
     return (
